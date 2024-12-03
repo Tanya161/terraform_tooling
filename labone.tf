@@ -15,7 +15,7 @@ output "letters_string" {
 }
 
 output "app_name_short" {
-  value = slice(split("",local.application_name), 0, 3)
+  value = slice(split("", local.application_name), 0, 3)
 }
 
 output "node_count" {
@@ -27,7 +27,7 @@ output "node_size" {
 }
 
 output "resource_group_name" {
-  value = format("rg-%s-%s",local.application_name,var.domain)
+  value = format("rg-%s-%s", local.application_name, var.domain)
 }
 
 
